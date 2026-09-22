@@ -56,6 +56,7 @@ def test_stacked_demo() -> None:
     assert np["p1"].value == 5
     assert np["a.p2"].value == 10
     assert np["b.c.p3"].value == 15
+    assert mod.parameters() == [mod.p1, mod.a.p2, mod.b.c.p3]
 
 
 # ## Advanced Tests
